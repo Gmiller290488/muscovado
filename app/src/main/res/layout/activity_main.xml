@@ -10,55 +10,55 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/muscovado"
         android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
+        android:src="@drawable/muscovado"
 
         />
+
     <TextView
-        android:layout_margin="5dp"
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:textSize="32sp"
-        android:textColorLink="#685050"
-        android:text="@string/address"
-        android:autoLink="map"
-        android:linksClickable="true"
-        />
-    <TextView
-
         android:layout_margin="5dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/address"
+        android:textColor="#685050"
+        android:textSize="32sp" />
+
+    <TextView
+
         android:id="@+id/phone"
-        android:layout_below="@id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:textSize="32sp"
-        android:text="@string/phone"
+        android:layout_below="@id/address"
+        android:layout_margin="5dp"
         android:autoLink="phone"
+        android:fontFamily="sans-serif"
         android:linksClickable="true"
+        android:text="@string/phone"
         android:textColorLink="#685050"
+        android:textSize="32sp"
 
         />
+
     <TextView
-        android:layout_alignParentLeft="true"
+        android:id="@+id/openingtimes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/openingtimes"
         android:layout_alignParentBottom="true"
-        android:text="@string/times"
-        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
         android:paddingBottom="50dp"
-         android:textSize="20sp"
-        />
+        android:paddingLeft="10dp"
+        android:text="@string/times"
+        android:textSize="20sp" />
+
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/quins"/>
+        android:background="@drawable/quins" />
 
 
 </RelativeLayout>
