@@ -22,10 +22,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:textSize="32sp"
-        android:textColor="#685050"
-        android:text="Address: 1 Rue Sedaine, 75011 Paris, France"
+        android:textColorLink="#685050"
+        android:text="@string/address"
+        android:autoLink="map"
+        android:linksClickable="true"
         />
     <TextView
+
         android:layout_margin="5dp"
         android:id="@+id/phone"
         android:layout_below="@id/address"
@@ -33,22 +36,29 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:textSize="32sp"
-        android:textColor="#685050"
-        android:text="Phone: +33 1 77 16 31 32"
+        android:text="@string/phone"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:textColorLink="#685050"
 
         />
     <TextView
+        android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/openingtimes"
         android:layout_alignParentBottom="true"
-        android:text="Weds-Fri: 8am - 6pm
-Sat-Sun:   10am-5pm
-Mon-Tue: Closed"
-        android:paddingLeft="100dp"
+        android:text="@string/times"
+        android:paddingLeft="10dp"
         android:paddingBottom="50dp"
          android:textSize="20sp"
         />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/quins"/>
 
 
 </RelativeLayout>
