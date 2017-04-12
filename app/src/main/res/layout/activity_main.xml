@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.muscovado.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/muscovado"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+
+        />
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="32sp"
+        android:textColor="#685050"
+        android:text="Address: 1 Rue Sedaine, 75011 Paris, France"
+        />
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/phone"
+        android:layout_below="@id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="32sp"
+        android:textColor="#685050"
+        android:text="Phone: +33 1 77 16 31 32"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/openingtimes"
+        android:layout_alignParentBottom="true"
+        android:text="Weds-Fri: 8am - 6pm
+Sat-Sun:   10am-5pm
+Mon-Tue: Closed"
+        android:paddingLeft="100dp"
+        android:paddingBottom="50dp"
+         android:textSize="20sp"
+        />
+
+
+</RelativeLayout>
